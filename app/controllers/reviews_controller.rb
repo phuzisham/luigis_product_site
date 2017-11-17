@@ -1,4 +1,9 @@
 class ReviewsController < ApplicationController
+  def index
+    @product = Product.find(params[:product_id])
+    @reviews = @product.reviews
+  end
+
   def new
     @product = Product.find(params[:product_id])
     @review = Review.new
@@ -23,7 +28,7 @@ class ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    redirect_to review_path(@review.product_id)
+    redirect_to product_reviews_path(@review.product_id)
   end
 
   private
