@@ -1,7 +1,5 @@
 class ProductsController < ApplicationController
   def index
-    @topThree = Product.topThree.limit(3)
-    @featured = Product.featured.first
     @products = Product.all
   end
 
@@ -25,6 +23,6 @@ class ProductsController < ApplicationController
 
 private
   def product_params
-    params.require(:product).permit(:title)
+    params.require(:product).permit(:title, :cost, :country)
   end
 end
