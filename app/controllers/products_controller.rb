@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    @topThree = Product.topThree.limit(3)
+    @featured = Product.featured.first
   end
 
   def new

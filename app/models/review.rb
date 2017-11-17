@@ -1,5 +1,5 @@
 class Review < ApplicationRecord
-  belongs_to :product
+  belongs_to :product, counter_cache: true
   validates :author, :presence => true
   validates :content, :presence => true
   validates_inclusion_of :rating, in: 1..5

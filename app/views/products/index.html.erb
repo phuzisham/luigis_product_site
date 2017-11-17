@@ -1,8 +1,10 @@
 <h1>Products</h1>
 
-<% @products.each do |product| %>
+<% @topThree.each do |product| %>
   <li><%= link_to product.title, product_reviews_path(product) %></li>
 <% end %>
+
+<%= link_to @featured.title, product_reviews_path(@featured) %>
 
 <%= link_to "New Product", new_product_path %>
 <hr>
