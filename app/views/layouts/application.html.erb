@@ -7,10 +7,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <%= link_to('Home', root_path) %>
+    <%= link_to('All Products', products_path) %>
+    <%= link_to('Add Product', new_product_path)  %>
+  </header>
   <body>
-    <%= flash[:alert] %>
-    <%= flash[:notice] %>
-    <%= yield %>
+    <div class="container">
+      <%= flash[:alert] %>
+      <%= flash[:notice] %>
+      <%= yield %>
+    </div>
   </body>
 </html>

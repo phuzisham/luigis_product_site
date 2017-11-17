@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
   def index
     @topThree = Product.topThree.limit(3)
     @featured = Product.featured.first
+    @products = Product.all
   end
 
   def new
