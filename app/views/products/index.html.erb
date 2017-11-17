@@ -1,11 +1,11 @@
 <h1>Products</h1>
 
   <% @products.each do |product| %>
-    <li><%= link_to product.title, product_path(product) %></li>
+    <li><%= link_to product.title, review_path(product) %></li>
   <% end %>
-  <% if current_user %>
+
   <%= link_to "New Product", new_product_path %>
-  <% end %>
+
 
 
 <hr>

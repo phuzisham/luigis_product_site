@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root :to => 'products#index'
 
-  resources :genres do
-    resources :artists
+  resources :products do
+    resources :reviews
   end
 end
