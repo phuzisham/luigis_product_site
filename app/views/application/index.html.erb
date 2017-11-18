@@ -1,7 +1,7 @@
 <div class="card">
   <h4>New Products</h4>
   <% @topThree.each do |product| %>
-    <li><%= link_to product.title, product_reviews_path(product) %></li>
+    <li><%= link_to product.title, product_reviews_path(product) %>  $<%= product.cost %>.00 -- <%= product.country %></li>
   <% end %>
 </div>
 
