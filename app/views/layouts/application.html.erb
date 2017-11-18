@@ -10,8 +10,10 @@
   <header>
     <%= link_to('Home', root_path) %>
     <%= link_to('All Products', products_path) %>
-    <%= link_to('Add Product', new_product_path)  %><h1>Luigi's Product Site</h1>
+    <%= link_to('Add Product', new_product_path)  %>
+    <h1 id="name">Luigi's Product Site</h1>
   </header>
+  <br><br><br>
   <body>
     <div class="container">
       <%= flash[:alert] %>

@@ -1,4 +1,5 @@
 <div class="card">
+  <h4>All Products</h4>
   <% @products.each do |product| %>
     <li><%= link_to product.title, product_reviews_path(product) %> $<%= product.cost %>.00 -- <%= product.country %></li>
     <span>
