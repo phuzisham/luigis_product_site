@@ -4,7 +4,7 @@ Review.destroy_all
 #seeding products
 50.times do
   Product.create( title: Faker::Beer.unique.name,
-                  cost: Faker::Number.between(5, 500),
+                  cost: Faker::Number.between(5, 100),
                   country: Faker::RickAndMorty.location )
 end
 

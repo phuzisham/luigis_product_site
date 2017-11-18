@@ -7,7 +7,9 @@
 
 <div class="card">
   <h4>Most Reviewed Product</h4>
-  <%= link_to @featured.title, product_reviews_path(@featured) %>
+  <span>
+    <%= link_to @featured.title, product_reviews_path(@featured) %> $<%= @featured.cost %>.00 -- <%= @featured.country %>
+  </span>
 </div>
 
 <div class="card">
