@@ -1,7 +1,11 @@
-<% @products.each do |product| %>
-  <li><%= link_to product.title, product_reviews_path(product) %></li>
-  <%= link_to "Edit", edit_product_path(product) %> |
-  <%= link_to "Delete", product_path(product),
-                           :data => {:confirm => "Are you sure?",
-                                          :method => "delete"} %>
-<% end %>
+<div class="card">
+  <% @products.each do |product| %>
+    <li><%= link_to product.title, product_reviews_path(product) %></li>
+    <span>
+      <%= link_to "Edit", edit_product_path(product) %> |
+      <%= link_to "Delete", product_path(product),
+                               :data => {:confirm => "Are you sure?",
+                                              :method => "delete"} %>
+    </span>
+  <% end %>
+</div>
