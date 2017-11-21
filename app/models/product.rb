@@ -12,4 +12,8 @@ class Product < ApplicationRecord
   scope :topThree, -> {
     order('created_at DESC')
   }
+
+  scope :search, -> (search_parameter) {
+    where("lower(country) like lower(?) OR lower(title) like lower(?)", "%#{search_parameter}%", "%#{search_parameter}%")
+  }
 end
