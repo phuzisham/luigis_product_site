@@ -6,6 +6,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #5b504b;
 }
 
 html a {
@@ -23,11 +24,19 @@ header {
   z-index: 1;
 }
 
+header a {
+  margin-right: 10px;
+}
+
 #name {
   float: right;
   font-weight: 600;
   font-size: 20px;
   color: #a3998b;
+}
+
+#searchForm {
+  float: right;
 }
 
 li {
@@ -36,7 +45,8 @@ li {
 
 .card {
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border-style: inset;
   color: #fff;
   border-radius: 23px;
