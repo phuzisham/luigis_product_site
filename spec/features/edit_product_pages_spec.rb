@@ -11,7 +11,7 @@ describe "the edit a product process" do
     fill_in 'product_title', :with => 'DuhEdit'
     fill_in 'product_cost', :with => '23'
     fill_in 'product_country', :with => 'Jorn'
-    click_on 'Update Product'
+    click_on 'Submit'
     expect(page).to have_content 'DuhEdit'
   end
 
@@ -25,7 +25,7 @@ describe "the edit a product process" do
     fill_in 'product_title', :with => ''
     fill_in 'product_cost', :with => '27'
     fill_in 'product_country', :with => 'Jorhn'
-    click_on 'Update Product'
+    click_on 'Submit'
     expect(page).to have_content 'errors'
   end
 end

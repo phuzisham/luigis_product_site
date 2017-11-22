@@ -4,6 +4,9 @@ class ProductsController < ApplicationController
     if params[:search] != nil
       @products = Product.search(params[:search])
     end
+    if params[:earth] != nil
+      @products = Product.earth
+    end
   end
 
   def new

@@ -37,7 +37,7 @@ _Product site for fictional company with a focus on validations and callbacks._
 
 8. _Run 'rails s'_
 
-9. _Access sit at 'localhost:3000'_
+9. _Access site at 'localhost:3000'_
 
 ## Support and contact details
 

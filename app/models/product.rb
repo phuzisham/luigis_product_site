@@ -16,4 +16,8 @@ class Product < ApplicationRecord
   scope :search, -> (search_parameter) {
     where("lower(country) like lower(?) OR lower(title) like lower(?)", "%#{search_parameter}%", "%#{search_parameter}%")
   }
+
+  scope :earth, -> {
+    where("country = 'Earth'")
+  }
 end
