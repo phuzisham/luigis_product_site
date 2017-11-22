@@ -8,14 +8,16 @@
 
 _Product site for fictional company with a focus on validations and callbacks._
 
-## Specs
+## User Stories
 
-| Description        | Input           | Output  |
-| ------------- |:-------------:| -----:|
-| Display. | Open homepage. | All animals display with details. |
-| Control what to display. | Choose mature animals from dropdown. | Displays all animals 3 and older. |
-| Add animal. | Enter requires inputs and push add button. | A new animal is added. |
-| Edit Animal. | Press edit button. | Edit menu appears and dynamically updates. |
+* _Users should see 3 most recent products and most reviewed product on home page._
+* _Users can search for products by name or country._
+* _Users cannot submit empty form fields._
+* _Users can rate products in a range of 1 to 5_
+* _Users can leave reviews with a character range of 50 to 250_
+* _Users can add new products and reviews to site._
+* _Users can delete products and reviews from site._
+* _Users can edit products and reviews on site._
 
 ## Setup/Installation Requirements
 
@@ -50,28 +52,3 @@ _Rails, HTML, CSS, Bootstrap, SASS, and Capybara testing._
 *MIT License*
 
 Copyright (c) 2017 **_David Hale_**
-
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
