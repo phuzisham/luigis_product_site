@@ -23,9 +23,9 @@ _Product site for fictional company with a focus on validations and callbacks._
 
 1. _Download files [here](https://github.com/phuzisham/luigis_product_site.git)._
 
-2. _In terminal navigate inside project directory._
+2. _Run 'postgres'._
 
-3. _Run 'postgres'._
+3. _In terminal navigate inside project directory._
 
 4. _Run 'bundle'._
 
