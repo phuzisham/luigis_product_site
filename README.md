@@ -9,6 +9,8 @@
 
 _Product site for fictional company with a focus on validations and callbacks._
 
+![Screenshot](https://github.com/phuzisham/luigis_product/blob/master/img/cap.png "Screen Capture")
+
 ## User Stories
 
 * _Users should see 3 most recent products and most reviewed product on home page._
