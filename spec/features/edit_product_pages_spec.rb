@@ -1,16 +1,18 @@
 require 'rails_helper'
 
 describe "the edit a product process" do
-  it "edits a product" do
+  before(:each) do
     FactoryGirl.create(:product)
-
     visit '/'
     click_link 'Sign up'
     fill_in 'user_email', :with => 'test@test.com'
     fill_in 'user_password', :with => '123456'
     fill_in 'user_password_confirmation', :with => '123456'
     click_on 'Sign Up'
+  end
 
+  it "edits a product" do
+    visit '/'
     click_link 'All Products'
     first(:link, "Edit").click
     fill_in 'product_title', :with => 'DuhEdit'
@@ -21,15 +23,7 @@ describe "the edit a product process" do
   end
 
   it "gives error when no title is entered" do
-    FactoryGirl.create(:product)
-
     visit '/'
-    click_link 'Sign up'
-    fill_in 'user_email', :with => 'test@test.com'
-    fill_in 'user_password', :with => '123456'
-    fill_in 'user_password_confirmation', :with => '123456'
-    click_on 'Sign Up'
-
     click_link 'All Products'
     first(:link, "Edit").click
     fill_in 'product_title', :with => ''
