@@ -1,10 +1,17 @@
 require 'rails_helper'
 
 describe 'the add a product process' do
+  before(:each) do
+    FactoryGirl.create(:product)
+    visit '/'
+    click_link 'Sign up'
+    fill_in 'user_email', :with => 'test@test.com'
+    fill_in 'user_password', :with => '123456'
+    fill_in 'user_password_confirmation', :with => '123456'
+    click_on 'Sign Up'
+  end
+
   it 'adds a new product' do
-    prod1 = Product.create(:title => "Duh1", :cost => "11", :country => "Flerb")
-    prod2 = Product.create(:title => "Duh2", :cost => "12", :country => "Klerb")
-    prod3 = Product.create(:title => "Duh3", :cost => "13", :country => "Tlerb")
     visit '/'
     click_link 'Add Product'
     fill_in 'product_title', :with => 'Fine Beer'
