@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :authorize, only: [:new, :edit, :destroy]
   def index
     @product = Product.find(params[:product_id])
     @reviews = @product.reviews
