@@ -28,11 +28,12 @@
           <h6>Author: <%= review.author %></h6>
           <p>Review: <%= review.content %></p>
           <p>Rating: <%= review.rating %></p>
-
-          <%= link_to "Edit", edit_product_review_path(@product, review) %> |
-          <%= link_to "Delete", product_review_path(@product, review),
-                                   :data => {:confirm => "Are you sure?",
-                                                  :method => "delete"} %>
+          <% if current_user %>
+            <%= link_to "Edit", edit_product_review_path(@product, review) %> |
+            <%= link_to "Delete", product_review_path(@product, review),
+                                     :data => {:confirm => "Are you sure?",
+                                                    :method => "delete"} %>
+          <% end %>
         </li>
       <% end %>
     </ul>
