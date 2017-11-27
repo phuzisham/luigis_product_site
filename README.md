@@ -1,6 +1,7 @@
 # Luigis Product Site
 
-#### _Last Modified: 11.21.2017_
+#### _Created: 11.17.2017_
+#### _Last Modified: 11.27.2017_
 
 #### By _David Hale_
 
@@ -18,6 +19,8 @@ _Product site for fictional company with a focus on validations and callbacks._
 * _Users can add new products and reviews to site._
 * _Users can delete products and reviews from site._
 * _Users can edit products and reviews on site._
+* _Users can log in or sign up._
+* _Users can only interact with db if signed in._
 
 ## Setup/Installation Requirements
 
@@ -38,6 +41,8 @@ _Product site for fictional company with a focus on validations and callbacks._
 8. _Run 'rails s'_
 
 9. _Access site at 'localhost:3000'_
+
+10. _To fully access all site functionality you will have to create an account and be signed in._
 
 ## Support and contact details
 
