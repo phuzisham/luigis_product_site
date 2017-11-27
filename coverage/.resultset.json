@@ -535,8 +535,8 @@
         1,
         null,
         1,
-        4,
-        4,
+        6,
+        6,
         null,
         null,
         1,
@@ -637,8 +637,18 @@
         2,
         2,
         null
+      ],
+      "/Users/Guest/Desktop/luigis_product_site/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null
       ]
     },
-    "timestamp": 1511811737
+    "timestamp": 1511812387
   }
 }
